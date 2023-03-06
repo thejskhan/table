@@ -97,10 +97,12 @@ const App = () => {
 								as="th"
 								className={hiddenColumns.includes(key as Column) ? "hidden" : "relative border py-4 px-2 text-left bg-blue-500 text-white"}
 							>
-								<div className="flex items-center gap-1">
-									{LabelMap[key as Column]}
-									<Popover.Button><EllipsisVerticalIcon className="w-6 h-6" /></Popover.Button>
-								</div>
+								<Popover.Button className="flex items-center gap-1">
+									<span>
+										{LabelMap[key as Column]}
+									</span>
+									<EllipsisVerticalIcon className="w-6 h-6" />
+								</Popover.Button>
 								<Popover.Panel className="absolute z-10 text-black bg-white">
 									<div className="relative w-full group">
 										<span className="border block px-4 py-2">Change Data</span>
