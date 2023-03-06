@@ -1,3 +1,8 @@
+## To run the project
+
+- `pnpm install`
+- `pnpm dev`
+
 ## Instructions
 
 Your goal is to be able to switch columns in the table presented in the `index.html` file.
